@@ -1,0 +1,484 @@
+/* General styles */
+body {
+  margin: 0%;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --bg-primary: #f8a9f4;
+  --tablet-min-breakpoint: 601px;
+  --tablet-max-breakpoint: 990px;
+}
+
+/* Commons */
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 45px;
+  color: var(--bg-primary);
+  margin: 20px;
+}
+
+.section-description {
+  font-size: 18px;
+  color: #616161;
+}
+
+/* Mobile media query  */
+@media only screen and (max-width: 600px) {
+  .section-header {
+    padding: 2%;
+  }
+
+  .section-title {
+    font-size: 35px;
+  }
+}
+
+/* Tablet media query  */
+@media only screen and (min-width: 601px) and (max-width: 990px) {
+}
+
+/* Nav bar styles */
+.navbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--bg-primary);
+}
+
+.nav-item {
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a.nav-item:hover {
+  color: #92e3a9;
+}
+
+/* Mobile media query  */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+}
+
+/* Hero section styles */
+.hero {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+.img-hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-hero {
+  width: 480px;
+  height: 500px;
+}
+
+.texts-hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: #212121;
+  padding: 1%;
+}
+
+.text1-hero {
+  color: #253339;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.text2-hero {
+  font-size: 45px;
+  font-weight: 750;
+  color: #f8a9f4;
+  margin: 10px 0;
+}
+
+.text3-hero {
+  color: #616161;
+}
+
+.hero-button {
+  margin-top: 30px;
+  width: fit-content;
+  display: block;
+  text-align: center;
+  border-radius: 50px;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 1.2em;
+  white-space: nowrap;
+  color: white;
+  background-color: #f8a9f4;
+}
+
+/* Mobile media query  */
+@media only screen and (max-width: 600px) {
+  .hero {
+    flex-direction: column-reverse;
+    margin: 0 0 100px 0;
+  }
+
+  .texts-hero-container {
+    padding: 10%;
+  }
+
+  .img-hero {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Tablet media query  */
+@media only screen and (min-width: 601px) and (max-width: 990px) {
+  .hero {
+    flex-direction: column-reverse;
+    margin: 0 0 100px 0;
+  }
+
+  .texts-hero-container {
+    padding: 10%;
+  }
+
+  .img-hero {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* mis conocimientos */
+.knowlage-container-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2% 2%;
+}
+
+.knowlage-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5em;
+  border-style: solid;
+  width: 200px;
+  height: 200px;
+}
+
+/* Mobile media query  */
+@media only screen and (max-width: 600px) {
+  .knowlage-container-icons {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2% 2%;
+    height: 1300px;
+  }
+}
+
+/* Tablet media query  */
+@media only screen and (min-width: 601px) and (max-width: 990px) {
+  .knowlage-container-icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* cita */
+.container-cite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f8a9f4;
+  color: white;
+  font-size: 30px;
+}
+
+.cite-author {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* mis proyectos */
+.projects-card-container {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 300;
+  height: 310;
+  margin: 0.75em;
+  padding: 20px;
+
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.project-card-img {
+  margin-left: 3px;
+  width: 160px;
+  height: 160px;
+}
+
+.project-card-label {
+  padding: 10px;
+  color: #253339;
+}
+
+/* Contacto */
+.contact-card {
+  display: flex;
+  text-align: left;
+  background-color: #ffffff;
+  padding: 80px 60px;
+  border-radius: 15px;
+  border: 1px solid #e0e0e0;
+  width: 50%;
+}
+
+.contact-container {
+  flex: 1;
+}
+
+.contact-container .section-header {
+  padding: unset;
+  align-items: flex-start;
+  max-width: 80%;
+}
+
+.contact-container .section-title {
+  font-size: 40px;
+  margin: 0 0 10px 0;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.social-media-item {
+  text-decoration: none;
+  color: #616161;
+  margin-bottom: 15px;
+  line-height: 35px;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.social-media-item i {
+  color: #f8a9f4;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+}
+
+.social-media-item:hover {
+  color: #f8a9f4;
+}
+
+.social-media-item:hover i {
+  background-color: #f8a9f4;
+  color: white;
+}
+
+.contact-form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  margin-bottom: 10px;
+}
+
+.input-container input {
+  height: 30px;
+  border-radius: 10px;
+  border: solid 1px #f8a9f4;
+}
+
+.input-container input:focus-visible {
+  outline: solid 1.5px #f8a9f4;
+}
+
+.input-container textarea {
+  height: 150px;
+  border-radius: 10px;
+  border: solid 1px #f8a9f4;
+}
+
+.input-container textarea:focus-visible {
+  outline: solid 1.5px #f8a9f4;
+}
+
+.contact-button {
+  margin-top: 10px;
+  align-self: flex-end;
+  max-width: 40%;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #f8a9f4;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.contact-button:hover {
+  color: #f8a9f4;
+  background-color: white;
+  border: solid 1px #f8a9f4;
+}
+
+.input-container-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container-wrapper .input-container {
+  min-width: 45%;
+}
+
+/* Mobile media query  */
+@media only screen and (max-width: 600px) {
+  .contact-card {
+    flex-direction: column;
+  }
+
+  .contact-container .section-header {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .contact-button {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  .input-container-wrapper {
+    flex-direction: column;
+  }
+}
+
+/* Tablet media query  */
+@media only screen and (min-width: 601px) and (max-width: 990px) {
+  .contact-card {
+    flex-direction: column;
+  }
+
+  .contact-container .section-header {
+    max-width: 100%;
+    align-items: center;
+  }
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #f8a9f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-footer {
+  margin-bottom: 20px;
+}
+
+.social-media-footer {
+  display: flex;
+  width: 20%;
+  justify-content: space-evenly;
+}
+
+.social-media-item-footer {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #f8a9f4;
+  font-size: 25px;
+  text-decoration: none;
+  border: solid 1px #ffffff;
+  border-radius: 50%;
+}
+
+.social-media-item-footer:hover {
+  color: #ffffff;
+  background-color: #f8a9f4;
+}
+
+/* Mobile media query  */
+@media only screen and (max-width: 600px) {
+  .nav-footer {
+    display: none;
+  }
+
+  .social-media-footer {
+    width: 50%;
+  }
+}
+
+/* Tablet media query  */
+@media only screen and (min-width: 601px) and (max-width: 990px) {
+  .social-media-footer {
+    width: 40%;
+  }
+}
