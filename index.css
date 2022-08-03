@@ -331,7 +331,6 @@ a.project-card:hover {
   line-height: 35px;
   text-align: center;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .social-media-item i {
