@@ -71,6 +71,7 @@ body {
 
 a.nav-item:hover {
   color: #6f69ac;
+  text-decoration: underline;
 }
 
 /* Mobile media query  */
@@ -143,7 +144,9 @@ a.nav-item:hover {
 }
 
 a.hero-button:hover {
+  border: solid 1px #6f69ac;
   color: #6f69ac;
+  background-color: white;
 }
 
 /* Mobile media query  */
@@ -184,7 +187,7 @@ a.hero-button:hover {
 .knowlage-container-icons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2% 2%;
+  gap: 3% 3%;
 }
 
 .knowlage-icon {
@@ -195,6 +198,10 @@ a.hero-button:hover {
   border-style: solid;
   width: 200px;
   height: 200px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: rgb(25 60 77 / 10%) 5px 5px 5px 5px;
 }
 
 /* Mobile media query  */
@@ -249,11 +256,14 @@ a.hero-button:hover {
   margin: 0.75em;
   padding: 20px;
 
-  border: 1px solid #e0e0e0;
+  border: none;
   border-radius: 8px;
+
+  box-shadow: rgb(25 60 77 / 20%) 5px 5px 5px 5px;
 
   text-decoration: none;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .project-card-img {
@@ -267,10 +277,18 @@ a.hero-button:hover {
   color: #253339;
 }
 
+.project-card-label:hover {
+  color: #6c63ff;
+}
+a.project-card:hover {
+  border: 1px solid #6f69ac;
+}
+
 /* Contacto */
 .contact-card {
   display: flex;
   text-align: left;
+  color: #212121;
   background-color: #ffffff;
   padding: 80px 60px;
   border-radius: 15px;
@@ -293,6 +311,9 @@ a.hero-button:hover {
   margin: 0 0 10px 0;
 }
 
+.section-description {
+  color: #212121;
+}
 .social-media {
   display: flex;
   justify-content: flex-start;
@@ -303,7 +324,7 @@ a.hero-button:hover {
 
 .social-media-item {
   text-decoration: none;
-  color: #616161;
+  color: #212121;
   margin-bottom: 15px;
   line-height: 35px;
   text-align: center;
