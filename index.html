@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="imag-icon" href="/imagenes/favicon.ico" />
     <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
@@ -32,17 +33,22 @@
     <div class="container">
       <header>
         <nav class="navbar">
-          <a class="nav-item" href="#Hola">Hola</a>
-          <a class="nav-item" href="#Conocimiento">Conocimiento</a>
-          <a class="nav-item" href="#Proyecto">Proyecto</a>
-          <a class="nav-item" href="#Contacto">Contacto</a>
+          <a class="nav-item" href="#hola">Hola</a>
+          <a class="nav-item" href="#conocimiento">Conocimiento</a>
+          <a class="nav-item" href="#proyecto">Proyecto</a>
+          <a class="nav-item" href="#contacto">Contacto</a>
         </nav>
       </header>
 
       <!-- Hero section -->
-      <section id="Hola" class="hero">
+      <section id="hola" class="hero">
         <div class="img-hero-container">
-          <img class="img-hero" src="imagenes/hero_transparent.png" alt="" />
+          <img
+            class="img-hero"
+            src="imagenes/hero_transparent.png"
+            alt="imagen de programadora"
+            aria-hidden="true"
+          />
         </div>
         <div class="texts-hero-container">
           <h2 class="text1-hero">¡Hola! Soy</h2>
@@ -59,7 +65,7 @@
       </section>
 
       <!-- mis conocmientos -->
-      <section id="Conocimiento" class="section-container">
+      <section id="conocimiento" class="section-container">
         <div class="section-header">
           <h2 class="section-title">Mis conocimientos</h2>
           <p class="section-description">
@@ -108,7 +114,7 @@
       </div>
 
       <!-- mis proyectos -->
-      <section id="Proyecto" class="section-container">
+      <section id="proyecto" class="section-container">
         <div class="section-header">
           <h2 class="section-title">Mis proyectos</h2>
           <p class="section-description">
@@ -126,6 +132,7 @@
               <img
                 src="imagenes/hero_light.webp"
                 alt="Portafolio"
+                aria-hidden="true"
                 class="project-card-img"
               />
             </figure>
@@ -136,6 +143,7 @@
               <img
                 src="imagenes/memes.webp"
                 alt="Memes"
+                aria-hidden="true"
                 class="project-card-img"
               />
             </figure>
@@ -144,8 +152,9 @@
           <a href="#" class="project-card">
             <figure>
               <img
-                src="imagenes/match.webp"
+                src="imagenes/match (1).webp"
                 alt="Match3"
+                aria-hidden="true"
                 class="project-card-img"
               />
             </figure>
@@ -156,6 +165,7 @@
               <img
                 src="imagenes/gastos.webp"
                 alt="controlador de gastos"
+                aria-hidden="true"
                 class="project-card-img"
               />
             </figure>
@@ -166,6 +176,7 @@
               <img
                 src="imagenes/reunines.webp"
                 alt="Administrador de reuniones"
+                aria-hidden="true"
                 class="project-card-img"
               />
             </figure>
@@ -195,7 +206,7 @@
       </section>
 
       <!-- contacto -->
-      <section id="Contacto" class="section-container">
+      <section id="contacto" class="section-container">
         <div class="contact-card">
           <div class="contact-container">
             <div class="section-header">
@@ -210,18 +221,21 @@
               <a
                 class="social-media-item"
                 href="https://www.instagram.com/lurcorrea_/"
+                aria-label="instagram"
               >
                 <i class="fa-brands fa-instagram"></i> @lurcorrea_
               </a>
               <a
                 class="social-media-item"
                 href="https://github.com/lourdescorrea"
+                aria-label="github"
               >
                 <i class="fa-brands fa-github-alt"></i> @lourdescorrea
               </a>
               <a
                 class="social-media-item"
                 href="mailto:lourdesrociocorrea99@gmail.com"
+                aria-label="Mail"
               >
                 <i class="fa-solid fa-envelope"></i>
                 lourdesrociocorrea99@gmail.com
@@ -252,11 +266,11 @@
                   />
                 </div>
                 <div class="input-container">
-                  <label for="Apellido">apellido</label>
+                  <label for="Apellido">Apellido</label>
                   <input
                     type="text"
                     name="apellido"
-                    placeholder="apellido"
+                    placeholder="Apellido"
                     size="15"
                     required
                   />
@@ -277,7 +291,7 @@
               <div class="input-container">
                 <label for="Mensaje">Mensaje</label>
                 <textarea
-                  id="Mensaje"
+                  id="mensaje"
                   name="Mensaje"
                   placeholder="Mensaje"
                   cols="20"
@@ -294,28 +308,31 @@
       <!--footer  -->
       <footer class="footer">
         <div class="nav-footer">
-          <a class="nav-item" href="#Hola">Hola</a>
-          <a class="nav-item" href="#Conocimiento">Conocimiento</a>
-          <a class="nav-item" href="#Proyecto">Proyecto</a>
-          <a class="nav-item" href="#Contacto">Contacto</a>
+          <a class="nav-item" href="#hola">Hola</a>
+          <a class="nav-item" href="#conocimiento">Conocimiento</a>
+          <a class="nav-item" href="#proyecto">Proyecto</a>
+          <a class="nav-item" href="#contacto">Contacto</a>
         </div>
 
         <div class="social-media-footer">
           <a
             class="social-media-item-footer"
             href="https://www.instagram.com/lurcorrea_/"
+            aria-label="instagram"
           >
             <i class="fa-brands fa-instagram"></i>
           </a>
           <a
             class="social-media-item-footer"
             href="https://github.com/lourdescorrea"
+            aria-label="github"
           >
             <i class="fa-brands fa-github-alt"></i>
           </a>
           <a
             class="social-media-item-footer"
             href="mailto:lourdesrociocorrea99@gmail.com"
+            aria-label="email"
           >
             <i class="fa-solid fa-envelope"></i>
           </a>
